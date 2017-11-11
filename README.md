@@ -6,3 +6,51 @@ content information and label information simultaneously in an unsupervised mann
 without leveraging downstream classifiers.
 G2-EMF outperforms unsupervised baselines from 10.1% to 34.4% on the node classification task.
 Details can be accessed here.
+
+### Requirements
+
+* Matlab (>R2014a)
+* gcc (>4.4.5)
+* networkx
+
+### Run the demo
+
+Run the main script in matlab as:
+```
+run_emf
+```
+
+### Data
+
+We test our model in four datasets in the paper, here in `./data/` folder we provide
+files of `cora` dataset.
+We use dataset splits provided by [Planetoid](https://github.com/kimiyoung/planetoid),
+where data files are formatted as `ind.<dataset>.<suffix>`.
+And several files preprocessed from the origin files:
+* {dataset}.embeddings.walks.0: random walk sequences obtained from directly running [DeepWalk](https://github.com/phanein/deepwalk)
+* {dataset}_features.mat: features saved `.mat` file
+* {dataset}_train_data.npy: training nodes and corresponding labels in `.npy` file
+
+You can specify a dataset by editing `run_emf.m`, where details about other hyper-parameters
+can also be found.
+
+### Output
+
+We save and test checkpoints at every `verbose`, and you
+can change its value to fit your storage.
+
+The final output as well as checkpoints are `.mat` files which
+contains matrix **W** and matrix **S** described in our paper.
+Matrix **W** is the embedding matrix of the input graph with size
+`(num_nodes * emb_dim)`, and you can refer to `test.py`
+to evalute its performance.
+
+### Acknowledgements
+
+The original version of this code base was forked from [emf](https://github.com/etali/emf),
+and we also referred to [GCN](https://github.com/tkipf/gcn)
+while preprocessing datasets. Many thanks to the authors for making their code available.
+
+### Citing
+
+Please cite our paper if you find G2-EMF useful in your research:
