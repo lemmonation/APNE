@@ -1,4 +1,4 @@
-##Generalized Neural Graph Embedding with Matrix Factorization
+## Generalized Neural Graph Embedding with Matrix Factorization
 
 This project contains code related to the paper "Generalized Neural Graph Embedding with Matrix Factorization".
 G2-EMF is a graph/network embedding method that can incorporate the structure information,
