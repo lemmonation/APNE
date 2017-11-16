@@ -5,7 +5,7 @@ G2-EMF is a graph/network embedding method that can incorporate the structure in
 content information and label information simultaneously in an unsupervised manner, i.e.,
 without leveraging downstream classifiers.
 G2-EMF outperforms unsupervised baselines from 10.1% to 34.4% on the node classification task.
-Details can be accessed here.
+Details can be accessed [here](https://arxiv.org/abs/1711.04094).
 
 ### Requirements
 
@@ -25,9 +25,9 @@ run_emf
 We test our model in four datasets in the paper, here in `./data/` folder we provide
 files of `cora` dataset.
 We use dataset splits provided by [Planetoid](https://github.com/kimiyoung/planetoid),
-where data files are formatted as `ind.<dataset>.<suffix>`.
-And several files preprocessed from the origin files:
-* {dataset}.embeddings.walks.0: random walk sequences obtained from directly running [DeepWalk](https://github.com/phanein/deepwalk)
+where data files are formatted as `ind.<dataset>.<suffix>`,
+as well as several files processed from the origin files:
+* {dataset}.embeddings.walks.0: random walk sequences obtained by directly running [DeepWalk](https://github.com/phanein/deepwalk)
 * {dataset}_features.mat: features saved `.mat` file
 * {dataset}_train_data.npy: training nodes and corresponding labels in `.npy` file
 
@@ -40,7 +40,7 @@ We save and test checkpoints at every `verbose`, and you
 can change its value to fit your storage.
 
 The final output as well as checkpoints are `.mat` files which
-contains matrix **W** and matrix **S** described in our paper.
+contain matrix **W** and matrix **S** described in our paper.
 Matrix **W** is the embedding matrix of the input graph with size
 `(num_nodes * emb_dim)`, and you can refer to `test.py`
 to evalute its performance.
@@ -54,3 +54,11 @@ while preprocessing datasets. Many thanks to the authors for making their code a
 ### Citing
 
 Please cite our paper if you find G2-EMF useful in your research:
+```
+@article{guo2017generalized,
+  title={Generalized Neural Graph Embedding with Matrix Factorization},
+  author={Guo, Junliang and Xu, Linli and Huang, Xunpeng and Chen, Enhong},
+  journal={arXiv preprint arXiv:1711.04094},
+  year={2017}
+}
+```
