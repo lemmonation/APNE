@@ -2,10 +2,8 @@
 #coding=utf-8
 ###############################################
 # File Name: p_feature.py
-# Author: Junliang Guo
-# mail: guojunliangkk@gmail.com
-# Created Time: Fri 10 Feb 2017 04:45:12 PM CST
-# Description: 
+# Author: Junliang Guo@USTC
+# Email: guojunll@mail.ustc.edu.cn
 ###############################################
 
 import sys

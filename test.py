@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 ###############################################
 # File Name: test.py
-# Author: Junliang Guo
-# mail: guojunliangkk@gmail.com
-# Created Time: Tue 17 Jan 2017 03:52:35 PM CST
-# Description: 
+# Author: Junliang Guo@USTC
+# Email: guojunll@mail.ustc.edu.cn
 ###############################################
 
 import numpy as np
