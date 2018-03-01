@@ -1,10 +1,9 @@
-## Generalized Neural Graph Embedding with Matrix Factorization
-
-This project contains code related to the paper "Generalized Neural Graph Embedding with Matrix Factorization".
-G2-EMF is a graph/network embedding method that can incorporate the structure information,
+## APNE
+This project contains code related to the paper "Enhancing Network Embedding with Auxiliary Information: An Explicit Matrix Factorization Perspective".
+APNE (Auxiliary information Preserved Netork Embedding) is a graph/network embedding method that can incorporate the structure information,
 content information and label information simultaneously in an unsupervised manner, i.e.,
 without leveraging downstream classifiers.
-G2-EMF outperforms unsupervised baselines from 10.1% to 34.4% on the node classification task.
+APNE outperforms unsupervised baselines from 10.1% to 34.4% on the node classification task.
 Details can be accessed [here](https://arxiv.org/abs/1711.04094).
 
 ### Requirements
@@ -55,10 +54,11 @@ while preprocessing datasets. Many thanks to the authors for making their code a
 
 Please cite our paper if you find G2-EMF useful in your research:
 ```
-@article{guo2017generalized,
-  title={Generalized Neural Graph Embedding with Matrix Factorization},
+@inproceedings{guo2018enhancing,
+  title={Enhancing Network Embedding with Auxiliary Information: An Explicit Matrix Factorization Perspective},
   author={Guo, Junliang and Xu, Linli and Huang, Xunpeng and Chen, Enhong},
-  journal={arXiv preprint arXiv:1711.04094},
-  year={2017}
+  booktitle={International Conference on Database Systems for Advanced Applications},
+  year={2018},
+  organization={Springer}
 }
 ```
