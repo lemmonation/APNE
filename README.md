@@ -52,7 +52,7 @@ while preprocessing datasets. Many thanks to the authors for making their code a
 
 ### Citing
 
-Please cite our paper if you find G2-EMF useful in your research:
+Please cite our paper if you find APNE useful in your research:
 ```
 @inproceedings{guo2018enhancing,
   title={Enhancing Network Embedding with Auxiliary Information: An Explicit Matrix Factorization Perspective},
