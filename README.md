@@ -58,6 +58,7 @@ Please cite our paper if you find APNE useful in your research:
   title={Enhancing Network Embedding with Auxiliary Information: An Explicit Matrix Factorization Perspective},
   author={Guo, Junliang and Xu, Linli and Huang, Xunpeng and Chen, Enhong},
   booktitle={International Conference on Database Systems for Advanced Applications},
+  pages={3--19},
   year={2018},
   organization={Springer}
 }
